@@ -1,0 +1,1073 @@
+background: Black
+display_index: 0
+height: 600
+hide_bar: true
+items:
+- description: background
+  height: 600
+  id: 42cd3a50-1a5d-441a-9820-1cd4884bdcc5
+  image_path: ./images/e31af7a3-baf6-4542-bc9f-80f1afc0013d.jpg
+  sort: 0
+  type: Image
+  width: 1024
+  x: 0
+  y: 0
+  z_index: -2
+- description: date
+  font_family: Segoe UI
+  font_size: 20
+  foreground: White
+  format: dd/MM/yyyy
+  id: a0ad15b632bc4cc1b242f7a3a9c82e60
+  sensor:
+    source: system
+    source_id: system-datetime
+  sort: 1
+  text_alignment: Center
+  type: SensorObject
+  unit:
+    id: system-datetime
+  width: 1024
+  x: 0
+  y: 50
+  z_index: 0
+- description: time
+  font_family: Tahoma
+  font_size: 35
+  foreground: White
+  format: HH:mm
+  id: 2ef0dff0-6a45-4527-9d0a-8aef0e73e4b7
+  sensor:
+    source: system
+    source_id: system-datetime
+  sort: 2
+  text_alignment: Center
+  type: SensorObject
+  unit:
+    id: system-datetime
+  width: 1024
+  x: 0
+  y: 7
+  z_index: 0
+- description: System - Volume - value
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: 571c13d8-db17-4ff7-a134-23f74e42ba8d
+  num_decimal_places: 0
+  sensor:
+    source: system
+    source_id: system-volume
+  show_unit: true
+  sort: 3
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 100
+  x: 62
+  y: 59
+  z_index: 1
+- description: volume label
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: 595f4683-a1ef-44d0-a9e8-ef6bbc10e000
+  label: Volume
+  sort: 4
+  text_alignment: Left
+  type: Label
+  x: 62
+  y: 59
+  z_index: 1
+- description: cpu name
+  font_family: Segoe UI
+  font_size: 22
+  foreground: '#ff80ffff'
+  id: 578c5a6ea5ab4692be076e867f233abc
+  label: Ryzen 7 5700x
+  sort: 5
+  text_alignment: Left
+  type: Label
+  x: 66
+  y: 92
+  z_index: 0
+- description: gpu name
+  font_family: Segoe UI
+  font_size: 22
+  foreground: '#ff80ffff'
+  id: 9e40b3c84b95403d98fb8c670ea0b49b
+  label: PYM RTX 4070 TI
+  sort: 6
+  text_alignment: Left
+  type: Label
+  x: 682
+  y: 92
+  z_index: 0
+- description: ram name
+  font_family: Segoe UI
+  font_size: 22
+  foreground: '#ff80ffff'
+  id: ec47187e-42e5-42c2-be09-848bb3f1e88f
+  label: HyperX Fury 3200
+  sort: 7
+  text_alignment: Left
+  type: Label
+  x: 373
+  y: 92
+  z_index: -1
+- description: AMD Ryzen 7 5700X - Core (Tctl/Tdie) - value
+  font_family: Segoe UI
+  font_size: 45
+  foreground: White
+  id: 36d757df-e334-4fd1-a377-0f94bf5b3907
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /amdcpu/0/temperature/2
+  show_unit: true
+  sort: 8
+  type: SensorValue
+  unit:
+    id: Temperature---DegreeCelsius
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 150
+  x: 188
+  y: 132
+  z_index: 0
+- description: NVIDIA GeForce RTX 4070 Ti - GPU Core - value
+  font_family: Segoe UI
+  font_size: 45
+  foreground: White
+  id: 8d9c66b158f2451caa925db16d464141
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /gpu-nvidia/0/temperature/0
+  show_unit: true
+  sort: 9
+  type: SensorValue
+  unit:
+    id: Temperature---DegreeCelsius
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 150
+  x: 808
+  y: 132
+  z_index: 0
+- background: Black
+  chart_type: HorizontalBar
+  description: AMD Ryzen 7 5700X - CPU Total - chart
+  fill: '#ff80ffff'
+  height: 30
+  id: e282b75e-033c-478b-9b01-20575632446d
+  line_smoothness: 1
+  min_step: 2
+  num_decimal_places: 1
+  sensor:
+    source: libre-hardware
+    source_id: /amdcpu/0/load/0
+  show_x_axis: false
+  show_y_axis: false
+  sort: 10
+  stroke: White
+  type: SensorChart
+  unit:
+    id: Ratio---Percent
+  value_type: Value
+  width: 265
+  x: 70
+  x_max_value: 100
+  x_min_value: 0
+  y: 220
+  y_max_value: 
+  y_min_value: 
+  z_index: 0
+- description: AMD Ryzen 7 5700X - CPU Total - chart - bg
+  height: 60
+  id: fb330330-fbb8-46f2-86c7-8e79feb4c995
+  image_path: ./images/a0985c35-2cd7-42c3-b682-3d352be4a66c.png
+  sort: 11
+  type: Image
+  width: 265
+  x: 70
+  y: 205
+  z_index: -1
+- background: Black
+  chart_type: HorizontalBar
+  description: Generic Memory - Memory - chart
+  fill: '#ff80ffff'
+  height: 30
+  id: 9f2a73fa51dd4ee48b7c0b2352a00099
+  line_smoothness: 1
+  min_step: 2
+  num_decimal_places: 1
+  sensor:
+    source: libre-hardware
+    source_id: /ram/load/0
+  show_x_axis: false
+  show_y_axis: false
+  sort: 12
+  stroke: White
+  type: SensorChart
+  unit:
+    id: Ratio---Percent
+  value_type: Value
+  width: 265
+  x: 380
+  x_max_value: 100
+  x_min_value: 0
+  y: 220
+  y_max_value: 
+  y_min_value: 
+  z_index: 0
+- description: Generic Memory - Memory - chart - bg
+  height: 60
+  id: b05d37bd9778416faaf42a064454f9c5
+  image_path: ./images/a0985c35-2cd7-42c3-b682-3d352be4a66c.png
+  sort: 13
+  type: Image
+  width: 265
+  x: 380
+  y: 205
+  z_index: -1
+- background: Black
+  chart_type: HorizontalBar
+  description: NVIDIA GeForce RTX 4070 Ti - GPU Core - chart
+  fill: '#ff80ffff'
+  height: 30
+  id: 117d64f5c8a0460492ba97dd759fe59f
+  line_smoothness: 1
+  min_step: 2
+  num_decimal_places: 1
+  sensor:
+    source: libre-hardware
+    source_id: /gpu-nvidia/0/load/0
+  show_x_axis: false
+  show_y_axis: false
+  sort: 14
+  stroke: White
+  type: SensorChart
+  unit:
+    id: Ratio---Percent
+  value_type: Value
+  width: 265
+  x: 690
+  x_max_value: 100
+  x_min_value: 0
+  y: 220
+  y_max_value: 
+  y_min_value: 
+  z_index: 0
+- description: NVIDIA GeForce RTX 4070 Ti - GPU Core - chart - bg
+  height: 60
+  id: e8f77e9258a34ed69c84cdf75725b76e
+  image_path: ./images/a0985c35-2cd7-42c3-b682-3d352be4a66c.png
+  sort: 15
+  type: Image
+  width: 265
+  x: 690
+  y: 205
+  z_index: -1
+- description: CPU USAGE
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: bbae6cfc82e846868b09e650544afdc0
+  label: USAGE
+  sort: 16
+  text_alignment: Left
+  type: Label
+  x: 66
+  y: 265
+  z_index: 0
+- description: AMD Ryzen 7 5700X - CPU Total - value
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: 54a0dc7a-a865-4a35-9e89-7e64cdafe7bf
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /amdcpu/0/load/0
+  show_unit: true
+  sort: 17
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 210
+  x: 130
+  y: 265
+  z_index: 0
+- description: CPU COOLER
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: cb172542f02d4e319bf6b9079db68e67
+  label: COOLER
+  sort: 18
+  text_alignment: Left
+  type: Label
+  x: 66
+  y: 285
+  z_index: 0
+- description: 'ASUS TUF GAMING X570-PLUS_BR - Fan #2 - value'
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: 543b106ad00c4d89b167e780f8f709fd
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /lpc/nct6798d/0/control/1
+  show_unit: true
+  sort: 19
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 210
+  x: 130
+  y: 285
+  z_index: 0
+- description: Power
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: a5293a0ea47a4ddc89564eac1ad9b974
+  label: POWER
+  sort: 20
+  text_alignment: Left
+  type: Label
+  x: 66
+  y: 305
+  z_index: 0
+- description: AMD Ryzen 7 5700X - Package - value
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: 675e1b288ff44972bfa8d29ab2546d6b
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /amdcpu/0/power/0
+  show_unit: true
+  sort: 21
+  type: SensorValue
+  unit:
+    id: Power---Watt
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 210
+  x: 130
+  y: 305
+  z_index: 0
+- background: '#36ffffff'
+  chart_type: Lines
+  description: AMD Ryzen 7 5700X - CPU Total - chart
+  fill: '#8d00b9ff'
+  height: 55
+  id: d355a7aa-07b2-4275-8e02-5186421504b9
+  line_smoothness: 1
+  min_step: 1
+  num_decimal_places: 1
+  sensor:
+    source: libre-hardware
+    source_id: /amdcpu/0/load/0
+  show_x_axis: false
+  show_y_axis: false
+  sort: 22
+  stroke: '#ff80ffff'
+  type: SensorChart
+  unit:
+    id: Ratio---Percent
+  value_type: Value
+  width: 288
+  x: 60
+  x_max_value: 
+  x_min_value: 
+  y: 340
+  y_max_value: 100
+  y_min_value: 0
+  z_index: 10
+- description: RAM USAGE
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: 23d162425cf2408d9bfebc68ccaf8d2e
+  label: USAGE
+  sort: 23
+  text_alignment: Left
+  type: Label
+  x: 373
+  y: 265
+  z_index: 0
+- description: Generic Memory - Memory - value
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: 479b046a9bde4c7fac83581349193f34
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /ram/load/0
+  show_unit: true
+  sort: 24
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 200
+  x: 437
+  y: 265
+  z_index: 0
+- description: RAM USED
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: 5f3a4ae43c994880b72099753c1f285b
+  label: USED
+  sort: 25
+  text_alignment: Left
+  type: Label
+  x: 373
+  y: 285
+  z_index: 0
+- description: Generic Memory - Memory Used - value
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: baa05d0483f6454881eeaedc13732411
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /ram/data/0
+  show_unit: true
+  sort: 26
+  type: SensorValue
+  unit:
+    id: Information---Megabyte
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 210
+  x: 437
+  y: 285
+  z_index: 0
+- description: RAM FREE
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: f8083c61bfaa4e23b2eb3e1c370a79cb
+  label: FREE
+  sort: 27
+  text_alignment: Left
+  type: Label
+  x: 373
+  y: 305
+  z_index: 0
+- description: Generic Memory - Memory Available - value
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: 437d07b186bb4662aeb5cd6b0d3bfffa
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /ram/data/1
+  show_unit: true
+  sort: 28
+  type: SensorValue
+  unit:
+    id: Information---Megabyte
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 210
+  x: 437
+  y: 305
+  z_index: 0
+- description: GPU UTILIZATION
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: e3eea5b0ce7b4e0f81652bd99056dcd3
+  label: GPU UTILIZATION
+  sort: 29
+  text_alignment: Left
+  type: Label
+  x: 682
+  y: 265
+  z_index: 0
+- description: NVIDIA GeForce RTX 4070 Ti - GPU Core - value
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: 3cd47c039e7e46d3a40d0f0450b6a01c
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /gpu-nvidia/0/load/0
+  show_unit: true
+  sort: 30
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 200
+  x: 746
+  y: 265
+  z_index: 0
+- description: GPU VRAM FREE
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: 846e1ac439c140ba96418ec22a07b7b9
+  label: VRAM FREE
+  sort: 31
+  text_alignment: Left
+  type: Label
+  x: 682
+  y: 285
+  z_index: 0
+- description: NVIDIA GeForce RTX 4070 Ti - GPU Memory Free - value
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: 4b78e2d4916e4b1fb62f4715bae8b37f
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /gpu-nvidia/0/smalldata/0
+  show_unit: true
+  sort: 32
+  type: SensorValue
+  unit:
+    id: Information---Megabyte
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 210
+  x: 746
+  y: 285
+  z_index: 0
+- description: GPU FAN
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: f4b45a667afd4c1a8bd2c8adce8916a8
+  label: FAN
+  sort: 33
+  text_alignment: Left
+  type: Label
+  x: 682
+  y: 305
+  z_index: 0
+- description: NVIDIA GeForce RTX 4070 Ti - GPU Fan 1 - value
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: 2b61c3b353064be8b04d425d9766b193
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /gpu-nvidia/0/control/1
+  show_unit: true
+  sort: 34
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 200
+  x: 746
+  y: 305
+  z_index: 0
+- background: '#36ffffff'
+  chart_type: Lines
+  description: NVIDIA GeForce RTX 4070 Ti - GPU Core - chart
+  fill: '#8d00b9ff'
+  height: 55
+  id: 079dd489c0e14399ac5d3c11619dfa61
+  line_smoothness: 1
+  min_step: 1
+  num_decimal_places: 1
+  sensor:
+    source: libre-hardware
+    source_id: /gpu-nvidia/0/load/0
+  show_x_axis: false
+  show_y_axis: false
+  sort: 35
+  stroke: '#ff80ffff'
+  type: SensorChart
+  unit:
+    id: Ratio---Percent
+  value_type: Value
+  width: 290
+  x: 675
+  x_max_value: 
+  x_min_value: 
+  y: 340
+  y_max_value: 100
+  y_min_value: 0
+  z_index: 10
+- description: storage
+  font_family: Segoe UI
+  font_size: 20
+  foreground: '#ff80ffff'
+  id: 69c9212f0e1c4a0ab00caa1e6a3fa66e
+  label: Storage
+  sort: 36
+  text_alignment: Left
+  type: Label
+  x: 66
+  y: 392
+  z_index: 0
+- description: 'C:'
+  font_family: Segoe UI
+  font_size: 20
+  foreground: '#ff80ffff'
+  id: efb10478-91fb-4f51-ad61-750c5ce16232
+  label: 'C:'
+  sort: 37
+  text_alignment: Center
+  type: Label
+  x: 70
+  y: 415
+  z_index: 0
+- background: Transparent
+  chart_type: HorizontalBar
+  description: Samsung SSD 970 EVO Plus 1TB - Used Space - chart
+  fill: '#8d00b9ff'
+  height: 10
+  id: b24712b8-43b7-4ad3-bfcd-fdef15fc8fc2
+  line_smoothness: 1
+  min_step: 2
+  num_decimal_places: 1
+  sensor:
+    source: libre-hardware
+    source_id: /nvme/1/load/0
+  show_x_axis: false
+  show_y_axis: false
+  sort: 38
+  stroke: Black
+  type: SensorChart
+  unit:
+    id: Ratio---Percent
+  value_type: Value
+  width: 265
+  x: 70
+  x_max_value: 100
+  x_min_value: 0
+  y: 445
+  y_max_value: 
+  y_min_value: 
+  z_index: 0
+- description: Samsung SSD 970 EVO Plus 1TB - Temperature - value
+  font_family: Segoe UI
+  font_size: 20
+  foreground: White
+  id: 8605cb89-3a41-4337-87d4-856904046cd2
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /nvme/1/temperature/0
+  show_unit: true
+  sort: 39
+  type: SensorValue
+  unit:
+    id: Temperature---DegreeCelsius
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 70
+  x: 160
+  y: 415
+  z_index: 0
+- description: Samsung SSD 970 EVO Plus 1TB - Used Space - value
+  font_family: Segoe UI
+  font_size: 20
+  foreground: White
+  id: 7d08e989e02e4c55b96b05e596a45717
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /nvme/1/load/0
+  show_unit: true
+  sort: 40
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 90
+  x: 250
+  y: 415
+  z_index: 0
+- description: 'B:'
+  font_family: Segoe UI
+  font_size: 20
+  foreground: '#ff80ffff'
+  id: c290ef1e0010496989918ababfe9e533
+  label: 'B:'
+  sort: 41
+  text_alignment: Center
+  type: Label
+  x: 70
+  y: 450
+  z_index: 0
+- background: Transparent
+  chart_type: HorizontalBar
+  description: ADATA SX8200PNP - Used Space - chart
+  fill: '#8d00b9ff'
+  height: 10
+  id: db94cf74df8c497ca18ec414d6605b3a
+  line_smoothness: 1
+  min_step: 2
+  num_decimal_places: 1
+  sensor:
+    source: libre-hardware
+    source_id: /nvme/2/load/0
+  show_x_axis: false
+  show_y_axis: false
+  sort: 42
+  stroke: Black
+  type: SensorChart
+  unit:
+    id: Ratio---Percent
+  value_type: Value
+  width: 265
+  x: 70
+  x_max_value: 100
+  x_min_value: 0
+  y: 480
+  y_max_value: 
+  y_min_value: 
+  z_index: 0
+- description: ADATA SX8200PNP - Temperature - value
+  font_family: Segoe UI
+  font_size: 20
+  foreground: White
+  id: 14e74927dfe04f4f99ea8ef860439720
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /nvme/2/temperature/0
+  show_unit: true
+  sort: 43
+  type: SensorValue
+  unit:
+    id: Temperature---DegreeCelsius
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 70
+  x: 160
+  y: 450
+  z_index: 0
+- description: ADATA SX8200PNP - Used Space - value
+  font_family: Segoe UI
+  font_size: 20
+  foreground: White
+  id: acfad37843314e1db216d85471f6b25a
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /nvme/2/load/0
+  show_unit: true
+  sort: 44
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 90
+  x: 250
+  y: 450
+  z_index: 0
+- description: 'Y:'
+  font_family: Segoe UI
+  font_size: 20
+  foreground: '#ff80ffff'
+  id: a08b7e66a7a144628e18c1ac49c0ab2e
+  label: 'Y:'
+  sort: 45
+  text_alignment: Center
+  type: Label
+  x: 70
+  y: 490
+  z_index: 0
+- background: Transparent
+  chart_type: HorizontalBar
+  description: SanDisk SSD PLUS 480GB - Used Space - chart
+  fill: '#8d00b9ff'
+  height: 10
+  id: 6711515eb35f4f768cf6daa5b9a7204d
+  line_smoothness: 1
+  min_step: 2
+  num_decimal_places: 1
+  sensor:
+    source: libre-hardware
+    source_id: /hdd/0/load/0
+  show_x_axis: false
+  show_y_axis: false
+  sort: 46
+  stroke: Black
+  type: SensorChart
+  unit:
+    id: Ratio---Percent
+  value_type: Value
+  width: 265
+  x: 70
+  x_max_value: 100
+  x_min_value: 0
+  y: 520
+  y_max_value: 
+  y_min_value: 
+  z_index: 0
+- description: SanDisk SSD PLUS 480GB - Temperature - value
+  font_family: Segoe UI
+  font_size: 20
+  foreground: White
+  id: eabaaf6c7ee748e3a9cc9a58c8d4305f
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /hdd/0/temperature/0
+  show_unit: true
+  sort: 47
+  type: SensorValue
+  unit:
+    id: Temperature---DegreeCelsius
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 70
+  x: 160
+  y: 490
+  z_index: 0
+- description: SanDisk SSD PLUS 480GB - Used Space - value
+  font_family: Segoe UI
+  font_size: 20
+  foreground: White
+  id: 793dc4b1e3c143e0b9a20aab257c3ecc
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /hdd/0/load/0
+  show_unit: true
+  sort: 48
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 90
+  x: 250
+  y: 490
+  z_index: 0
+- description: FPS
+  font_family: Segoe UI
+  font_size: 20
+  foreground: '#ff80ffff'
+  id: 6807c9f3f82b4882809e9213ebaeb61e
+  label: FPS
+  sort: 49
+  text_alignment: Left
+  type: Label
+  x: 373
+  y: 392
+  z_index: 0
+- description: System - FPS - value
+  font_family: Segoe UI
+  font_size: 20
+  foreground: White
+  id: 004bf361-a08a-4518-ac7a-67be0d680b2c
+  num_decimal_places: 0
+  sensor:
+    source: RTSS
+    source_id: rtss-fps
+  show_unit: true
+  sort: 50
+  type: SensorValue
+  unit:
+    id: system-fps
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 270
+  x: 373
+  y: 415
+  z_index: 0
+- background: '#36ffffff'
+  chart_type: Lines
+  description: System - FPS - chart
+  fill: '#8d00b9ff'
+  height: 55
+  id: 6ac8aa7c6ead4210a4e5e4039765663d
+  line_smoothness: 1
+  min_step: 1
+  num_decimal_places: 1
+  sensor:
+    source: RTSS
+    source_id: rtss-fps
+  show_x_axis: false
+  show_y_axis: false
+  sort: 51
+  stroke: '#ff80ffff'
+  type: SensorChart
+  unit:
+    id: system-fps
+  value_type: Value
+  width: 265
+  x: 375
+  x_max_value: 
+  x_min_value: 
+  y: 470
+  y_max_value: 180
+  y_min_value: 0
+  z_index: 10
+- description: Fans
+  font_family: Segoe UI
+  font_size: 20
+  foreground: '#ff80ffff'
+  id: 09b2abec82744cb3ab3f8f8ba5ab7e46
+  label: Fans
+  sort: 52
+  text_alignment: Left
+  type: Label
+  x: 682
+  y: 392
+  z_index: 0
+- description: back fan
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: f0ababf3-dc8e-4a0b-89db-8c10c5d2f540
+  label: BACK
+  sort: 53
+  text_alignment: Center
+  type: Label
+  x: 682
+  y: 425
+  z_index: 0
+- description: 'ASUS TUF GAMING X570-PLUS_BR - Fan #1 - value'
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: 7e3a61ec40a24430a7ac965bfe143774
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /lpc/nct6798d/0/control/0
+  show_unit: true
+  sort: 54
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 130
+  x: 822
+  y: 425
+  z_index: 0
+- description: front fan
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: 360338b6b3214a54a28a03b44c5a9932
+  label: FRONT
+  sort: 55
+  text_alignment: Center
+  type: Label
+  x: 682
+  y: 445
+  z_index: 0
+- description: 'ASUS TUF GAMING X570-PLUS_BR - Fan #3 - value'
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: 767a259528f64d319f858c5523556035
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /lpc/nct6798d/0/control/2
+  show_unit: true
+  sort: 56
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 130
+  x: 822
+  y: 445
+  z_index: 0
+- description: top fan
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: bcc3993009064be78e3dc07c7bd4ea41
+  label: TOP
+  sort: 57
+  text_alignment: Center
+  type: Label
+  x: 682
+  y: 465
+  z_index: 0
+- description: 'ASUS TUF GAMING X570-PLUS_BR - Fan #4 - value'
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: a932603497e44f1f845d9d4dce2b9dc0
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /lpc/nct6798d/0/control/3
+  show_unit: true
+  sort: 58
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 130
+  x: 822
+  y: 465
+  z_index: 0
+- description: pch fan (clone)
+  font_family: Segoe UI
+  font_size: 14
+  foreground: '#ff80ffff'
+  id: 5d189092d7034a1f83d6809d44705aff
+  label: PCH
+  sort: 59
+  text_alignment: Center
+  type: Label
+  x: 682
+  y: 485
+  z_index: 0
+- description: 'ASUS TUF GAMING X570-PLUS_BR - Fan #5 - value'
+  font_family: Segoe UI
+  font_size: 14
+  foreground: White
+  id: d63d7c28f5dd495fac488b926e7341d5
+  num_decimal_places: 0
+  sensor:
+    source: libre-hardware
+    source_id: /lpc/nct6798d/0/control/4
+  show_unit: true
+  sort: 60
+  type: SensorValue
+  unit:
+    id: Ratio---Percent
+  unit_foreground: '#ff80ffff'
+  value_type: Value
+  width: 130
+  x: 822
+  y: 485
+  z_index: 0
+maximized: false
+width: 1024
+x: 0
+y: 0
