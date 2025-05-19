@@ -491,13 +491,41 @@ items:
   x: 437
   y: 305
   z_index: 0
+- background: '#36ffffff'
+  chart_type: Lines
+  description: Generic Memory - Memory Used - chart
+  fill: '#8d00b9ff'
+  height: 55
+  id: 45d5621f54c749c1bdd9d2f8968899bd
+  line_smoothness: 1
+  min_step: 1
+  num_decimal_places: 2
+  sensor:
+    source: libre-hardware
+    source_id: /ram/data/0
+  show_x_axis: false
+  show_y_axis: false
+  sort: 29
+  stroke: '#ff80ffff'
+  type: SensorChart
+  unit:
+    id: Information---Gigabyte
+  value_type: Value
+  width: 286
+  x: 369
+  x_max_value: 
+  x_min_value: 
+  y: 340
+  y_max_value: 64
+  y_min_value: 0
+  z_index: 10
 - description: GPU UTILIZATION
   font_family: Segoe UI
   font_size: 14
   foreground: '#ff80ffff'
   id: e3eea5b0ce7b4e0f81652bd99056dcd3
   label: GPU UTILIZATION
-  sort: 29
+  sort: 30
   text_alignment: Left
   type: Label
   x: 682
@@ -513,7 +541,7 @@ items:
     source: libre-hardware
     source_id: /gpu-nvidia/0/load/0
   show_unit: true
-  sort: 30
+  sort: 31
   type: SensorValue
   unit:
     id: Ratio---Percent
@@ -529,7 +557,7 @@ items:
   foreground: '#ff80ffff'
   id: 846e1ac439c140ba96418ec22a07b7b9
   label: VRAM FREE
-  sort: 31
+  sort: 32
   text_alignment: Left
   type: Label
   x: 682
@@ -545,7 +573,7 @@ items:
     source: libre-hardware
     source_id: /gpu-nvidia/0/smalldata/0
   show_unit: true
-  sort: 32
+  sort: 33
   type: SensorValue
   unit:
     id: Information---Megabyte
@@ -561,7 +589,7 @@ items:
   foreground: '#ff80ffff'
   id: f4b45a667afd4c1a8bd2c8adce8916a8
   label: FAN
-  sort: 33
+  sort: 34
   text_alignment: Left
   type: Label
   x: 682
@@ -577,7 +605,7 @@ items:
     source: libre-hardware
     source_id: /gpu-nvidia/0/control/1
   show_unit: true
-  sort: 34
+  sort: 35
   type: SensorValue
   unit:
     id: Ratio---Percent
@@ -601,7 +629,7 @@ items:
     source_id: /gpu-nvidia/0/load/0
   show_x_axis: false
   show_y_axis: false
-  sort: 35
+  sort: 36
   stroke: '#ff80ffff'
   type: SensorChart
   unit:
@@ -621,7 +649,7 @@ items:
   foreground: '#ff80ffff'
   id: 69c9212f0e1c4a0ab00caa1e6a3fa66e
   label: Storage
-  sort: 36
+  sort: 37
   text_alignment: Left
   type: Label
   x: 66
@@ -633,7 +661,7 @@ items:
   foreground: '#ff80ffff'
   id: efb10478-91fb-4f51-ad61-750c5ce16232
   label: 'C:'
-  sort: 37
+  sort: 38
   text_alignment: Center
   type: Label
   x: 70
@@ -653,7 +681,7 @@ items:
     source_id: /nvme/1/load/0
   show_x_axis: false
   show_y_axis: false
-  sort: 38
+  sort: 39
   stroke: Black
   type: SensorChart
   unit:
@@ -677,7 +705,7 @@ items:
     source: libre-hardware
     source_id: /nvme/1/temperature/0
   show_unit: true
-  sort: 39
+  sort: 40
   type: SensorValue
   unit:
     id: Temperature---DegreeCelsius
@@ -697,7 +725,7 @@ items:
     source: libre-hardware
     source_id: /nvme/1/load/0
   show_unit: true
-  sort: 40
+  sort: 41
   type: SensorValue
   unit:
     id: Ratio---Percent
@@ -713,7 +741,7 @@ items:
   foreground: '#ff80ffff'
   id: c290ef1e0010496989918ababfe9e533
   label: 'B:'
-  sort: 41
+  sort: 42
   text_alignment: Center
   type: Label
   x: 70
@@ -733,7 +761,7 @@ items:
     source_id: /nvme/2/load/0
   show_x_axis: false
   show_y_axis: false
-  sort: 42
+  sort: 43
   stroke: Black
   type: SensorChart
   unit:
@@ -757,7 +785,7 @@ items:
     source: libre-hardware
     source_id: /nvme/2/temperature/0
   show_unit: true
-  sort: 43
+  sort: 44
   type: SensorValue
   unit:
     id: Temperature---DegreeCelsius
@@ -777,7 +805,7 @@ items:
     source: libre-hardware
     source_id: /nvme/2/load/0
   show_unit: true
-  sort: 44
+  sort: 45
   type: SensorValue
   unit:
     id: Ratio---Percent
@@ -793,7 +821,7 @@ items:
   foreground: '#ff80ffff'
   id: a08b7e66a7a144628e18c1ac49c0ab2e
   label: 'Y:'
-  sort: 45
+  sort: 46
   text_alignment: Center
   type: Label
   x: 70
@@ -813,7 +841,7 @@ items:
     source_id: /hdd/0/load/0
   show_x_axis: false
   show_y_axis: false
-  sort: 46
+  sort: 47
   stroke: Black
   type: SensorChart
   unit:
@@ -837,7 +865,7 @@ items:
     source: libre-hardware
     source_id: /hdd/0/temperature/0
   show_unit: true
-  sort: 47
+  sort: 48
   type: SensorValue
   unit:
     id: Temperature---DegreeCelsius
@@ -857,7 +885,7 @@ items:
     source: libre-hardware
     source_id: /hdd/0/load/0
   show_unit: true
-  sort: 48
+  sort: 49
   type: SensorValue
   unit:
     id: Ratio---Percent
@@ -873,7 +901,7 @@ items:
   foreground: '#ff80ffff'
   id: 6807c9f3f82b4882809e9213ebaeb61e
   label: FPS
-  sort: 49
+  sort: 50
   text_alignment: Left
   type: Label
   x: 373
@@ -889,7 +917,7 @@ items:
     source: RTSS
     source_id: rtss-fps
   show_unit: true
-  sort: 50
+  sort: 51
   type: SensorValue
   unit:
     id: system-fps
@@ -913,7 +941,7 @@ items:
     source_id: rtss-fps
   show_x_axis: false
   show_y_axis: false
-  sort: 51
+  sort: 52
   stroke: '#ff80ffff'
   type: SensorChart
   unit:
@@ -933,7 +961,7 @@ items:
   foreground: '#ff80ffff'
   id: 09b2abec82744cb3ab3f8f8ba5ab7e46
   label: Fans
-  sort: 52
+  sort: 53
   text_alignment: Left
   type: Label
   x: 682
@@ -945,7 +973,7 @@ items:
   foreground: '#ff80ffff'
   id: f0ababf3-dc8e-4a0b-89db-8c10c5d2f540
   label: BACK
-  sort: 53
+  sort: 54
   text_alignment: Center
   type: Label
   x: 682
@@ -961,7 +989,7 @@ items:
     source: libre-hardware
     source_id: /lpc/nct6798d/0/control/0
   show_unit: true
-  sort: 54
+  sort: 55
   type: SensorValue
   unit:
     id: Ratio---Percent
@@ -977,7 +1005,7 @@ items:
   foreground: '#ff80ffff'
   id: 360338b6b3214a54a28a03b44c5a9932
   label: FRONT
-  sort: 55
+  sort: 56
   text_alignment: Center
   type: Label
   x: 682
@@ -993,7 +1021,7 @@ items:
     source: libre-hardware
     source_id: /lpc/nct6798d/0/control/2
   show_unit: true
-  sort: 56
+  sort: 57
   type: SensorValue
   unit:
     id: Ratio---Percent
@@ -1009,7 +1037,7 @@ items:
   foreground: '#ff80ffff'
   id: bcc3993009064be78e3dc07c7bd4ea41
   label: TOP
-  sort: 57
+  sort: 58
   text_alignment: Center
   type: Label
   x: 682
@@ -1025,7 +1053,7 @@ items:
     source: libre-hardware
     source_id: /lpc/nct6798d/0/control/3
   show_unit: true
-  sort: 58
+  sort: 59
   type: SensorValue
   unit:
     id: Ratio---Percent
@@ -1041,7 +1069,7 @@ items:
   foreground: '#ff80ffff'
   id: 5d189092d7034a1f83d6809d44705aff
   label: PCH
-  sort: 59
+  sort: 60
   text_alignment: Center
   type: Label
   x: 682
@@ -1057,7 +1085,7 @@ items:
     source: libre-hardware
     source_id: /lpc/nct6798d/0/control/4
   show_unit: true
-  sort: 60
+  sort: 61
   type: SensorValue
   unit:
     id: Ratio---Percent
@@ -1069,5 +1097,5 @@ items:
   z_index: 0
 maximized: false
 width: 1024
-x: 0
-y: 0
+x: 821
+y: 400
