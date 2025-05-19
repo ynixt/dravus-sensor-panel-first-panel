@@ -1,5 +1,5 @@
 background: Black
-display_index: 0
+display_index: 1
 height: 600
 hide_bar: true
 items:
@@ -493,7 +493,7 @@ items:
   z_index: 0
 - background: '#36ffffff'
   chart_type: Lines
-  description: Generic Memory - Memory Used - chart
+  description: Generic Memory - Memory - chart
   fill: '#8d00b9ff'
   height: 55
   id: 45d5621f54c749c1bdd9d2f8968899bd
@@ -502,21 +502,21 @@ items:
   num_decimal_places: 2
   sensor:
     source: libre-hardware
-    source_id: /ram/data/0
+    source_id: /ram/load/0
   show_x_axis: false
   show_y_axis: false
   sort: 29
   stroke: '#ff80ffff'
   type: SensorChart
   unit:
-    id: Information---Gigabyte
+    id: Ratio---Percent
   value_type: Value
   width: 286
   x: 369
   x_max_value: 
   x_min_value: 
   y: 340
-  y_max_value: 64
+  y_max_value: 100
   y_min_value: 0
   z_index: 10
 - description: GPU UTILIZATION
@@ -1097,5 +1097,5 @@ items:
   z_index: 0
 maximized: false
 width: 1024
-x: 821
-y: 400
+x: 58
+y: 75
